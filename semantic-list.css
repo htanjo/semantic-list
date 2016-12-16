@@ -18,6 +18,7 @@ ol.semantic-list li:before {
   text-align: right;
   white-space: nowrap;
   cursor: default;
+  pointer-events: none;
   user-select: none;
   -ms-user-select: none;
   -moz-user-select: none;
