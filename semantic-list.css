@@ -23,12 +23,37 @@ ol.semantic-list li:before {
   counter-increment: list;
 }
 
-ol.semantic-list li:before {
-  content: counter(list) ".";
+ol.semantic-list li:before,
+ol.semantic-list.dot li:before {
+  content: counters(list, ".") " ";
 }
-ol.semantic-list ol li:before {
+
+ol.semantic-list.hyphen li:before {
+  content: counters(list, "-") " ";
+}
+
+ol.semantic-list.ja-formal li:before {
+  content: "第" counter(list);
+}
+ol.semantic-list.ja-formal ol li:before {
+  content: counter(list);
+}
+ol.semantic-list.ja-formal ol ol li:before {
   content: "(" counter(list) ")";
 }
-ol.semantic-list ol ol li:before {
+ol.semantic-list.ja-formal ol ol ol li:before {
+  content: counter(list, katakana);
+}
+ol.semantic-list.ja-formal ol ol ol li:before {
+  content: "(" counter(list, katakana) ")";
+}
+
+ol.semantic-list.ja-semi-formal li:before {
+  content: counter(list) ".";
+}
+ol.semantic-list.ja-semi-formal ol li:before {
+  content: "(" counter(list) ")";
+}
+ol.semantic-list.ja-semi-formal ol ol li:before {
   content: "(" counter(list, katakana) ")";
 }
