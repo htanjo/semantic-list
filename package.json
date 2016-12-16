@@ -1,0 +1,12 @@
+{
+  "name": "semantic-list",
+  "version": "0.0.0",
+  "description": "CSS for putting semantic numbers into nested list.",
+  "author": "Hiroyuki Tanjo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/htanjo/semantic-list.git"
+  },
+  "main": "semantic-list.css"
+}
