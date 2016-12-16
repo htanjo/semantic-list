@@ -2,20 +2,17 @@
 
 ol.semantic-list,
 ol.semantic-list ol {
-  padding-left: 0;
+  padding-left: 2.5em;
   list-style: none;
   counter-reset: list;
 }
 ol.semantic-list li {
-  padding-left: 2.5em;
-  text-indent: -2.5em;
+  position: relative;
 }
 ol.semantic-list li:before {
-  display: inline-block;
-  width: 0;
-  padding-left: 2em;
-  padding-right: 0.5em;
-  text-align: right;
+  position: absolute;
+  right: 100%;
+  margin-right: 0.5em;
   white-space: nowrap;
   cursor: default;
   pointer-events: none;
@@ -24,6 +21,9 @@ ol.semantic-list li:before {
   -moz-user-select: none;
   -webkit-user-select: none;
   counter-increment: list;
+}
+
+ol.semantic-list li:before {
   content: counter(list) ".";
 }
 ol.semantic-list ol li:before {
