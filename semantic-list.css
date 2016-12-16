@@ -17,6 +17,11 @@ ol.semantic-list li:before {
   padding-right: 0.5em;
   text-align: right;
   white-space: nowrap;
+  cursor: default;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
   counter-increment: list;
   content: counter(list) ".";
 }
