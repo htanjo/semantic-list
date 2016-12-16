@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+ol.semantic-list,
+ol.semantic-list ol {
+  padding-left: 0;
+  list-style: none;
+  counter-reset: list;
+}
+ol.semantic-list li {
+  padding-left: 2.5em;
+  text-indent: -2.5em;
+}
+ol.semantic-list li:before {
+  display: inline-block;
+  width: 0;
+  padding-left: 2em;
+  padding-right: 0.5em;
+  text-align: right;
+  white-space: nowrap;
+  counter-increment: list;
+  content: counter(list) ".";
+}
+ol.semantic-list ol li:before {
+  content: "(" counter(list) ")";
+}
+ol.semantic-list ol ol li:before {
+  content: "(" counter(list, katakana) ")";
+}

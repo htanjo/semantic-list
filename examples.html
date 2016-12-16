@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Semantic List CSS</title>
+    <link rel="stylesheet" href="semantic-list.css">
+    <style>
+      body {
+        width: 500px;
+        margin: 40px auto;
+        font-family: sans-serif;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Semantic List CSS</h1>
+    <h2>Default list</h2>
+    <ol>
+      <li>List item
+        <ol>
+          <li>List item
+            <ol>
+              <li>List item</li>
+              <li>List item</li>
+              <li>List item</li>
+            </ol>
+          </li>
+          <li>List item</li>
+          <li>List item</li>
+        </ol>
+      </li>
+      <li>List item</li>
+      <li>List item</li>
+    </ol>
+    <h2>Semantic list</h2>
+    <ol class="semantic-list">
+      <li>List item
+        <ol>
+          <li>List item
+            <ol>
+              <li>List item</li>
+              <li>List item</li>
+              <li>List item</li>
+            </ol>
+          </li>
+          <li>List item</li>
+          <li>List item</li>
+        </ol>
+      </li>
+      <li>List item</li>
+      <li>List item</li>
+    </ol>
+    <h2>Semantic list + sentence</h2>
+    <ol class="semantic-list">
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel venenatis quam, sed malesuada magna.
+        <ol>
+          <li>Nullam mollis ante eu laoreet sodales. Fusce id elit at nulla congue vestibulum a sit amet augue.
+            <ol>
+              <li>Vivamus velit ligula, pharetra non viverra sit amet, dignissim et sem.</li>
+              <li>Fusce lorem neque, condimentum ut iaculis vitae, consectetur vel magna.</li>
+              <li>Nulla auctor elit odio, ac sodales urna blandit at.</li>
+            </ol>
+          </li>
+          <li>Proin vestibulum vestibulum scelerisque.</li>
+          <li>Nunc elit mauris, dapibus ut iaculis quis, vulputate dignissim lacus. Donec blandit vitae dolor ut porttitor.</li>
+        </ol>
+      </li>
+      <li>Cras justo lacus, scelerisque in vestibulum nec, hendrerit id risus. Fusce vel rutrum lacus, id blandit orci.</li>
+      <li>Praesent fermentum consequat felis laoreet gravida.</li>
+    </ol>
+  </body>
+</html>
