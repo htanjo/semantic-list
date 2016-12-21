@@ -1,26 +1,65 @@
 @charset "UTF-8";
-ol.semantic-list, ol.semantic-list ol { padding-left: 2.5em; list-style: none; counter-reset: list; }
+ol.semantic-list,
+ol.semantic-list ol {
+  padding-left: 2.5em;
+  list-style: none;
+  counter-reset: list;
+}
 
-ol.semantic-list li { position: relative; }
+ol.semantic-list li {
+  position: relative;
+}
 
-ol.semantic-list li:before { position: absolute; right: 100%; margin-right: 0.5em; white-space: nowrap; cursor: default; pointer-events: none; user-select: none; -ms-user-select: none; -moz-user-select: none; -webkit-user-select: none; counter-increment: list; }
+ol.semantic-list li:before {
+  position: absolute;
+  right: 100%;
+  margin-right: 0.5em;
+  white-space: nowrap;
+  cursor: default;
+  pointer-events: none;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  counter-increment: list;
+}
 
-ol.semantic-list li:before, ol.semantic-list.dot li:before { content: counters(list, ".") " "; }
+ol.semantic-list li:before, ol.semantic-list.dot li:before {
+  content: counters(list, ".") " ";
+}
 
-ol.semantic-list.hyphen li:before { content: counters(list, "-") " "; }
+ol.semantic-list.hyphen li:before {
+  content: counters(list, "-") " ";
+}
 
-ol.semantic-list.ja-formal li:before { content: "第" counter(list); }
+ol.semantic-list.ja-formal li:before {
+  content: "第" counter(list);
+}
 
-ol.semantic-list.ja-formal ol li:before { content: counter(list); }
+ol.semantic-list.ja-formal ol li:before {
+  content: counter(list);
+}
 
-ol.semantic-list.ja-formal ol ol li:before { content: "(" counter(list) ")"; }
+ol.semantic-list.ja-formal ol ol li:before {
+  content: "(" counter(list) ")";
+}
 
-ol.semantic-list.ja-formal ol ol ol li:before { content: counter(list, katakana); }
+ol.semantic-list.ja-formal ol ol ol li:before {
+  content: counter(list, katakana);
+}
 
-ol.semantic-list.ja-formal ol ol ol ol li:before { content: "(" counter(list, katakana) ")"; }
+ol.semantic-list.ja-formal ol ol ol ol li:before {
+  content: "(" counter(list, katakana) ")";
+}
 
-ol.semantic-list.ja-semi-formal li:before { content: counter(list) "."; }
+ol.semantic-list.ja-semi-formal li:before {
+  content: counter(list) ".";
+}
 
-ol.semantic-list.ja-semi-formal ol li:before { content: "(" counter(list) ")"; }
+ol.semantic-list.ja-semi-formal ol li:before {
+  content: "(" counter(list) ")";
+}
 
-ol.semantic-list.ja-semi-formal ol ol li:before { content: "(" counter(list, katakana) ")"; }
+ol.semantic-list.ja-semi-formal ol ol li:before {
+  content: "(" counter(list, katakana) ")";
+}

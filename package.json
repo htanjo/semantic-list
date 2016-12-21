@@ -10,7 +10,7 @@
   },
   "main": "semantic-list.css",
   "scripts": {
-    "build": "node-sass src --output . --output-style compact"
+    "build": "node-sass src --output . --output-style expanded"
   },
   "devDependencies": {
     "node-sass": "^4.1.1"
