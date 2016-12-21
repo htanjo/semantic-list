@@ -7,7 +7,7 @@
 Download `semantic-list.css` and include it to your HTML.
 Also available on [npm](https://www.npmjs.com/).
 
-- Download: [**semantic-list.css**](./semantic-list.css)
+- Download: [**semantic-list.css**](https://raw.githubusercontent.com/htanjo/semantic-list/master/semantic-list.css)
 - `$ npm install semantic-list --save`
 
 ### Example
