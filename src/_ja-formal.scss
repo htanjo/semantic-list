@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+ol.semantic-list {
+  &.ja-formal {
+    li:before {
+      content: "第" counter(list);
+    }
+    ol {
+      li:before {
+        content: counter(list);
+      }
+      ol {
+        li:before {
+          content: "(" counter(list) ")";
+        }
+        ol {
+          li:before {
+            content: counter(list, katakana);
+          }
+          ol {
+            li:before {
+              content: "(" counter(list, katakana) ")";
+            }
+          }
+        }
+      }
+    }
+  }
+}

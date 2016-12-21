@@ -1,0 +1,8 @@
+ol.semantic-list {
+  &,
+  &.dot {
+    li:before {
+      content: counters(list, ".") " ";
+    }
+  }
+}

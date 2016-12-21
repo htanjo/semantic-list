@@ -1,0 +1,24 @@
+ol.semantic-list {
+  &,
+  ol {
+    padding-left: 2.5em;
+    list-style: none;
+    counter-reset: list;
+  }
+  li {
+    position: relative;
+    &:before {
+      position: absolute;
+      right: 100%;
+      margin-right: 0.5em;
+      white-space: nowrap;
+      cursor: default;
+      pointer-events: none;
+      user-select: none;
+      -ms-user-select: none;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      counter-increment: list;
+    }
+  }
+}

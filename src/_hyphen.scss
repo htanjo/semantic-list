@@ -1,0 +1,7 @@
+ol.semantic-list {
+  &.hyphen {
+    li:before {
+      content: counters(list, "-") " ";
+    }
+  }
+}

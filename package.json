@@ -8,5 +8,11 @@
     "type": "git",
     "url": "https://github.com/htanjo/semantic-list.git"
   },
-  "main": "semantic-list.css"
+  "main": "semantic-list.css",
+  "scripts": {
+    "build": "node-sass src --output . --output-style compact"
+  },
+  "devDependencies": {
+    "node-sass": "^4.1.1"
+  }
 }

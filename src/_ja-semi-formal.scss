@@ -1,0 +1,17 @@
+ol.semantic-list {
+  &.ja-semi-formal {
+    li:before {
+      content: counter(list) ".";
+    }
+    ol {
+      li:before {
+        content: "(" counter(list) ")";
+      }
+      ol {
+        li:before {
+          content: "(" counter(list, katakana) ")";
+        }
+      }
+    }
+  }
+}
