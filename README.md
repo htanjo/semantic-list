@@ -98,5 +98,5 @@ Follows [公用文作成の要領](https://ja.wikipedia.org/wiki/%E5%85%AC%E7%94
 ```
 
 ## License
-Copyright (c) 2016 Hiroyuki Tanjo.
+Copyright (c) 2016-2017 Hiroyuki Tanjo.
 Licensed under the MIT License.
